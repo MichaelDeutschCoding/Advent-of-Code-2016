@@ -1,8 +1,8 @@
 fave = 1350
-# fave=10
+fave=10
 
 goal = (31, 39)
-# goal = (7, 4)
+goal = (7, 4)
 
 def solve_space(location):
     x, y = location
@@ -36,7 +36,7 @@ valid_paths = []
 
 def find_path(current, visited= []):
     # global shortest
-    print("running")
+
     if current == goal:  #and len(visited) < shortest:
         #shortest = len(visited)
         print("I reached", current)
@@ -59,10 +59,10 @@ def find_path(current, visited= []):
     
     # return False
 
-
-
-
 find_path((1,1))
+
+for path in valid_paths:
+    print(len(path), path)
 
 #104 was too high
 #102 was too high
